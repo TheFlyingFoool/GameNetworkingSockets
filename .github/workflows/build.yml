@@ -30,6 +30,7 @@ jobs:
     env:
       VCPKG_ROOT: ${{ github.workspace }}/vcpkg
     steps:
+      - uses: actions/download-artifact@v3.0.0
       - uses: actions/checkout@main
 
       - uses: lukka/get-cmake@latest
